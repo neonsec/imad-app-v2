@@ -20,7 +20,7 @@ var articles={
                   1This content is from Page 1
                   This content is from Page 1This content is from Page 1
                       This content is from Page 1</p>`},
-    aricletwo: {title: "Article two | Neonsec" ,
+    articletwo: {title: "Article two | Neonsec" ,
     heading: 'Article two',
     date: new Date(),
     content: `  <p> This is the page from article 2 This is the page from article 2 
