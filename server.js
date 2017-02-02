@@ -67,11 +67,11 @@ app.get('/articleone',(req,res)=>{
 })
 
 app.get('/articletwo',(req,res)=>{
-  res.sendFile(path.join(__dirname,'ui','articletwo.html'));
+   res.send(createTemplate(articleone));
 })
 
 app.get('/articlethree',(req,res)=>{
-  res.sendFile(path.join(__dirname,'ui',"articlethree.html"));
+   res.send(createTemplate(articleone));
 
 })
 
