@@ -97,11 +97,11 @@ app.get('/articleone',(req,res)=>{
 })
 
 app.get('/articletwo',(req,res)=>{
-   res.send(createTemplate(articleone));
+   res.send(createTemplate(articletwo));
 })
 
 app.get('/articlethree',(req,res)=>{
-   res.send(createTemplate(articleone));
+   res.send(createTemplate(articlethree));
 
 })
 
