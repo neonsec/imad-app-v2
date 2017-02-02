@@ -5,9 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-var articleone = {
-    title: "Article One | Neonsec" ,
+var articles={
+    articleone: {title: "Article One | Neonsec" ,
     heading: 'Article One',
     date: new Date(),
     content: `  <p> This content is from Page 1 This content is from Page 1This content is from Page 1This content is from Page 1
@@ -20,8 +19,39 @@ var articleone = {
                 <p> This content is from Page 1 This content is from Page 1This content is from Page
                   1This content is from Page 1
                   This content is from Page 1This content is from Page 1
-                      This content is from Page 1</p>`
-};
+                      This content is from Page 1</p>`},
+    aricletwo: {title: "Article two | Neonsec" ,
+    heading: 'Article two',
+    date: new Date(),
+    content: `  <p> This is the page from article 2 This is the page from article 2 
+                    This is the page from article 2 This is the page from article 2 
+                    This is the page from article 2 
+                    </p>
+                    <p> This is the page from article 2 This is the page from article 2 
+                    This is the page from article 2 This is the page from article 2 
+                    This is the page from article 2 
+                    </p>
+                    <p> This is the page from article 2 This is the page from article 2 
+                    This is the page from article 2 This is the page from article 2 
+                    This is the page from article 2 
+                    </p>`},
+    articlethree: {title: "Article Three | Neonsec" ,
+    heading: 'Article Three',
+    date: new Date(),
+    content: ` <p> This is the page from article 3 This is the page from article 3
+                    This is the page from article 3 This is the page from article 3
+                    This is the page from article 3 
+                    </p>
+                    <p> This is the page from article 3 This is the page from article 3
+                    This is the page from article 3 This is the page from article 3
+                    This is the page from article 3 
+                    </p>
+                    <p> This is the page from article 3 This is the page from article 3
+                    This is the page from article 3 This is the page from article 3 
+                    This is the page from article 3
+                    </p>`}
+}
+
 
 
 
