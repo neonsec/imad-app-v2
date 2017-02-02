@@ -93,15 +93,15 @@ app.get('/', function (req, res) {
 
 
 app.get('/articleone',(req,res)=>{
-  res.send(createTemplate(articleone));
+  res.send(createTemplate(articles.articleone));
 })
 
 app.get('/articletwo',(req,res)=>{
-   res.send(createTemplate(articletwo));
+   res.send(createTemplate(articles.articletwo));
 })
 
 app.get('/articlethree',(req,res)=>{
-   res.send(createTemplate(articlethree));
+   res.send(createTemplate(articles.articlethree));
 
 })
 
