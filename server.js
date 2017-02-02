@@ -10,10 +10,10 @@ app.get('/', function (req, res) {
 });
 app.get('/articleone',(req,res)=>{
 <<<<<<< HEAD
-  res.sendFile(path.join(__dirname,'ui',articleone.html));
+  res.sendFile(path.join(__dirname,'ui','articleone.html'));
 })
 app.get('/articletwo',(req,res)=>{
-  res.sendFile(path.join(__dirname,'ui',articletwo.html));
+  res.sendFile(path.join(__dirname,'ui','articletwo.html'));
 })
 app.get('/articlethree',(req,res)=>{
   res.sendFile(path.join(__dirname,'ui',articlethree.html));
