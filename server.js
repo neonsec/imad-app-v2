@@ -69,8 +69,8 @@ var createTemplate = (data)=>{
   </head>
   <body>
       <div class="container">
-                <h1> Welcome to Article one </h1>
-                <p>Hello World welocme to article one </p>
+                <h1> Welcome to ${title} </h1>
+                <p>Hello World welocme to ${title}</p>
                 <a href = "/"> Home </a>
                 <hr>
                 <h3> ${heading}</h3>
