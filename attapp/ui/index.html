@@ -1,0 +1,90 @@
+<html>
+<head>
+    <script type="text/javascript" src="dist/js/jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" href="dist/css/bootstrap.css">
+<link rel="stylesheet" href="dist/bootstrap-clockpicker.min.css">
+<script src="dist/js/bootstrap.js"></script>
+<script src="dist/bootstrap-clockpicker.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+  <div>
+  
+</div>
+  <br/>
+  <form class="form-horizontal" role="form" style="width: 50%;" action="/newentry" method="POST">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="teamname" class="col-sm-2 control-label">Team Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="teamname" name="teamname" placeholder="team name" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="intime" class="col-sm-2 control-label">intime</label>
+        <div class="col-sm-10">
+            <div class="input-group clockpicker">
+                <input type="text" class="form-control" id="intime" name="intime" placeholder="18:00" value="">
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-time"></span>
+                </span>
+                <br>
+  
+            </div>
+            <p>Kindly Note that time is in 24 hour clock </p>
+        </div>
+    </div>  
+    <div class="form-group">
+        <label for="outtime" class="col-sm-2 control-label">outtime</label>
+        <div class="col-sm-10">
+            <div class="input-group clockpicker">
+                <input type="text" class="form-control" name="outtime" id="outtime" value="" >
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-time"></span>
+                </span>
+                <br>
+  
+            </div>
+        <p>Kindly Note that time is in 24 hour clock </p>
+        </div>
+
+    </div> 
+ 
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <button id="submit" name="submit" type="submit"  class="btn btn-primary">Submit </button>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <! Will be used to display an alert to the user>
+        </div>
+    </div>
+</form>
+<hr>
+<p> Designed and Developed by First years NCDRC </p>
+  </div>
+
+  <script type="text/javascript">
+  
+  $('.clockpicker').clockpicker({
+    placement: 'bottom',
+    align: 'left',
+    donetext: 'Done'
+});
+  </script>
+  <script type="text/javascript" src="dist/js/jquery-3.1.1.min.js"></script>
+</body>
+</html>
