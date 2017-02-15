@@ -3,12 +3,14 @@
     <title>Hello</title>
 </head>
 <body>
-    <h1 >Hello</h1>
+    <h1 onclick="myFunction()">Hello</h1>
     <script>
-        var setTimeout = (()=>{
-        var a = document.querySelector('h1');
-        a.style.leftMargin="20px";
-        },2000);
+  function myFunction() {
+    setTimeout(function(){  var a = document.querySelector('h1');
+        a.style.leftMargin="20px"; }, 3000);
+}
+      
+    
     </script>
 </body>
 </html>
