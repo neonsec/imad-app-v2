@@ -26,6 +26,9 @@ app.get('/css/style.css',(req,res)=>{
 app.get('/js/index.js',(req,res)=>{
 	res.sendFile(__dirname+'/ui/codepen/js/index.js');
 })
+app.get('/1',(req,res)=>{
+    res.sendFile(__dirname+'/ui/article-one.html');
+})
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
