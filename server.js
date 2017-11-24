@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 });
 
 app.get("/test", function(req,res) {
-	res.send("hi");
+	res.send("hssssi");
 });
 
 app.get('/ui/style.css', function (req, res) {
