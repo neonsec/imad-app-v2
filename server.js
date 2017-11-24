@@ -6,8 +6,8 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-	res.send("tet");
-//  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+//	res.send("tet");
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get("/test", function(req,res) {
