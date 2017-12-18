@@ -646,7 +646,7 @@ class RedisTrib
         nodes_count -= masters.length
 
         masters.each{|m| puts m}
-
+	interleaved.push interleaved.shift
         # Alloc slots on masters
         slots_per_node = ClusterHashSlots.to_f / masters_count
         first = 0
